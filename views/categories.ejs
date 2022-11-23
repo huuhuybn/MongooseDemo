@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+
+<p><%= name %></p>
+<p><%= number %></p>
+<p><%= array[0] %></p>
+<p><%= names[0] %></p>
+<p><%= soThu %></p>
+<p><%= kiTU %></p>
+<p><%= trueOrFalse %></p>
+<p><%= hoTen %></p>
+<p><%= object %></p>
+<p><%= arrayObject %></p>
+
+<% for(var i = 0 ; i < array.length ; i++) { %>
+
+    <p><%= array[i] %></p>
+
+<% } %>
+
+<p><%= object.name %></p>
+<p><%= object.tuoi %></p>
+<p><%= object.diaChi %></p>
+
+<% for(var i =0 ; i < arrayObject.length ; i++) {
+    if(arrayObject[i].tuoi > 11) {  %>
+
+    <p><%= arrayObject[i].name %></p>
+    <p><%= arrayObject[i].tuoi %></p>
+    <p><%= arrayObject[i].diaChi %></p>
+
+    <p>===================================</p>
+
+<% }} %>
+
+
+
+</body>
+</html>

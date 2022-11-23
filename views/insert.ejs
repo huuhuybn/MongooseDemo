@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+
+<form method="post" action="/insertStudent" enctype="application/x-www-form-urlencoded">
+    <input name="id" placeholder="Nhap id">
+    <input name="name" placeholder="Nhap Name">
+    <input name="sdt" placeholder="Nhap sdt">
+    <input name="add1" placeholder="Nhap address 1">
+    <input name="add2" placeholder="Nhap address 2">
+    <button type="submit">OK</button>
+</form>
+</body>
+</html>
