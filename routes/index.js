@@ -71,7 +71,7 @@ router.get('/delete', function (req, res) {
 })
 router.get('/danhSach', function (req, res) {
     const SV = mongoose.model('Student', SinhVien);
-    
+
     SV.find({}).then(data => {
         res.send(data)
     })
